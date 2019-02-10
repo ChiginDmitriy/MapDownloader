@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 2.8)
-project( Concatenator )
-find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
-add_executable( Concatenator Concatenator.cpp )
-target_link_libraries( Concatenator ${OpenCV_LIBS} )
